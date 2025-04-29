@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Resilviaa: Graceful Living, Resilient Foundations</title>
+    <link rel="icon" href="/images/Grace_Favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- animation cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+
+        <!-- header starts here -->
+        <header class="header text-white px-3">
+            <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown animate__delay-1s">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="/images/new-logo.png" alt="Logo">
+                    </a>
+
+                    <!-- Toggler/hamburger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="color: black; font-size: 1.5rem;"></i>
+                    </button>
+
+                    <!-- Collapsible nav links -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav gap-lg-4 text-center text-lg-start">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="#">Home</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#about-us">About Us</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="#location">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="#amenities">Amenities</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-dark fw-bold" href="#typesofapartments">Types of
+                                    apartments</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="#contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- header ends here -->
+
+        <!-- hero section starts here -->
+        <section class="hero-section position-relative">
+            <div class="container-fluid m-0 p-0">
+                <div class="row g-0">
+                    <div
+                        class="banner-div col-md-6 position-relative p-0 h-100 animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="/images/Grace_Banner_image_Flip.png" alt="banner-image" class="img-fluid banner-img ">
+                        <div class="artistic-text-footer">Artistic Impression</div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="w-75 pt-3">
+                            <p class="p-0 m-0 mx-1 animate__animated animate__fadeInDown animate__delay-1s">
+                                Graceful Living
+                            </p>
+                            <p class="banner-text fw-bold animate__animated animate__zoomIn animate__delay-2s">
+                                Grace Resilviaa, Resilient Foundations
+                            </p>
+                            <p class="animate__animated animate__fadeInUp animate__delay-3s">
+                                Grace Resilviaa is a low rise residential enclave in Sector 78, Gurgaon, where
+                                thoughtful design, premium craftsmanship, and cosmic inspiration converge. Four
+                                story
+                                buildings with only two homes per floor ensure privacy and exclusivity.
+                            </p>
+                            <button
+                                class="btn btn-success grace-btn learn-more-btn animate__animated animate__bounceIn animate__delay-4s"
+                                onclick="openContactForm()">
+                                Learn More <i class="fas fa-arrow-right arrow-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-btn" onclick="openContactForm()">
+                <button class="grace-btn btn btn-success">
+                    Enquire Now
+                </button>
+            </div>
+        </section>
+        <!-- hero section ends here -->
+
+        <!-- about us section starts here  -->
+        <!-- <section id="about-us">
+            <div class="container-fluid bg-light py-5 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 position-relative wow animate__animated animate__fadeInLeft">
+                            <div class="row">
+                                <div class="col-6 wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                                    <img src="/images/Abt_Img_1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <img src="/images/Abt_Img_2.png" alt=""
+                                        class="img-fluid wow animate__animated animate__zoomInUp mb-3"
+                                        data-wow-delay="0.5s">
+                                    <img src="/images/Abt_Img_3.png" alt=""
+                                        class="img-fluid wow animate__animated animate__zoomInDown"
+                                        data-wow-delay="0.7s">
+                                </div>
+                            </div>
+                            <div class="services-container position-absolute bottom-0 start-50 translate-middle-x text-center p-3 rounded shadow wow animate__animated animate__bounceInUp"
+                                data-wow-delay="1s">
+                                <div class="d-flex justify-content-center align-items-center gap-3">
+                                    <div class="circle-icon">
+                                        <i class="fa fa-users fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <p class="fs-3 fw-bold mb-1">50+</p>
+                                        <p class="mb-0">Unique Living Features</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 wow animate__animated animate__fadeInUp about-us-section"
+                            data-wow-delay="1.2s">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div>
+                                    <p class="text-uppercase p-0 m-0 about-us-section-p">About</p>
+                                    <h1 class="fs-1 fw-bold text-uppercase about-us-section-h1">the builder</h1>
+                                    <p>Backed by over two decades of real estate excellence, Grace Resilviaa reflects a
+                                        relentless commitment to quality, punctual delivery, and resident satisfaction.
+                                        Our expertise in structural integrity and refined design has shaped not just
+                                        buildings, but thriving, enduring communities.</p>
+                                    <button
+                                        class="btn btn-success grace-btn learn-more-btn animate__animated animate__bounceIn animate__delay-4s"
+                                        onclick="openContactForm()">
+                                        Learn More <i class="fas fa-arrow-right arrow-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- about us section ends here  -->
+
+        <!-- marqube container starts here -->
+
+        <!-- <section class="marquee-container">
+            <div class="marquee-track">
+                <h1 class="marquee-text"><i class="fas fa-building"></i>Elite Scape</h1>
+                <h1 class="marquee-text"><i class="fas fa-city"></i>Capital Crest Estates</h1>
+                <h1 class="marquee-text"><i class="fas fa-user-tie"></i>Property Consultants</h1>
+                <h1 class="marquee-text"><i class="fas fa-lightbulb"></i>Infinite Insight Realty</h1>
+
+                <h1 class="marquee-text"><i class="fas fa-building"></i>Elite Scape</h1>
+                <h1 class="marquee-text"><i class="fas fa-city"></i>Capital Crest Estates</h1>
+                <h1 class="marquee-text"><i class="fas fa-user-tie"></i>Property Consultants</h1>
+                <h1 class="marquee-text"><i class="fas fa-lightbulb"></i>Infinite Insight Realty</h1>
+            </div>
+        </section> -->
+
+        <!-- marqube container ends here -->
+
+        <!-- about location section starts -->
+        <section id="location">
+            <div class="container-fluid bg-light py-5">
+                <div class="text-center mb-5">
+                    <p class="text-uppercase fw-semibold animate__animated animate__fadeInDown animate__delay-1s m-0">
+                        About the
+                    </p>
+                    <h1 class="text-uppercase fw-bold animate__animated animate__fadeInUp animate__delay-1s">
+                        Location
+                    </h1>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-12 animate__animated animate__fadeIn animate__delay-2s">
+                            <p class="text-center about-location-p">
+                                Nestled at the foothills of the ancient Aravalli in Sector 78, Gurgaon, <strong>Grace
+                                    Resilviaa</strong> offers a harmonious blend of urban convenience and natural
+                                tranquility. With seamless connectivity to major highways and business hubs, your
+                                weekdays begin with ease, while weekends invite you to unwind amidst expansive green
+                                landscapes and premier leisure destinations—just moments from home.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h2 class="text-center mb-4 animate__animated animate__fadeInUp animate__delay-3s">Nearby
+                                Destinations</h2>
+
+                            <div
+                                class="row g-4 justify-content-center animate__animated animate__fadeInUp animate__delay-4s">
+                                <!-- Highway Access -->
+                                <div class="col-md-12">
+                                    <div class="px-4 py-2 bg-white rounded shadow h-100">
+                                        <div class="d-flex align-items-center mb-1 gap-3">
+                                            <i class="fas fa-road fa-2x text-success"></i>
+                                            <h5 class="fw-bold m-0">Highway Access</h5>
+                                        </div>
+                                        <p class="mb-0 text-muted">NH 8, Dwarka Expressway & KMP Expressway (5–10 min)
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Business Hubs -->
+                                <div class="col-md-12">
+                                    <div class="px-4 py-2 bg-white rounded shadow h-100">
+                                        <div class="d-flex align-items-center mb-1 gap-3">
+                                            <i class="fas fa-briefcase fa-2x text-success"></i>
+                                            <h5 class="fw-bold m-0">Business Hubs</h5>
+                                        </div>
+                                        <p class="mb-0 text-muted">DLF Cyber Hub 2, Corporate Greens, Genpact, BMW,
+                                            Suzuki
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Recreation -->
+                                <div class="col-md-12">
+                                    <div class="px-4 py-2 bg-white rounded shadow h-100">
+                                        <div class="d-flex align-items-center mb-1 gap-3">
+                                            <i class="fas fa-tree fa-2x text-success"></i>
+                                            <h5 class="fw-bold m-0">Recreation</h5>
+                                        </div>
+                                        <p class="mb-0 text-muted">10,000 acre Jungle Safari, Karma Lakelands, Golden
+                                            Greens
+                                            Golf & Resort
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Education -->
+                                <div class="col-md-12">
+                                    <div class="px-4 py-2 bg-white rounded shadow h-100">
+                                        <div class="d-flex align-items-center mb-1 gap-3">
+                                            <i class="fas fa-graduation-cap fa-2x text-success"></i>
+                                            <h5 class="fw-bold m-0">Education</h5>
+                                        </div>
+                                        <p class="mb-0 text-muted">DPS Manesar, Amity University, Kunskapsskolan, St.
+                                            Xavier’s,
+                                            Bal Bharti
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Airport -->
+                                <div class="col-md-12">
+                                    <div class="px-4 py-2 bg-white rounded shadow h-100">
+                                        <div class="d-flex align-items-center mb-1 gap-3">
+                                            <i class="fas fa-plane-departure fa-2x text-success"></i>
+                                            <h5 class="fw-bold m-0">Airport</h5>
+                                        </div>
+                                        <p class="mb-0 text-muted">IGI Airport (≈ 45 min)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 d-none d-md-flex"></div>
+                        <div class="col-md-6">
+                            <!-- Google Map -->
+                            <div class="rounded shadow-sm d-flex justify-content-center align-items-center mt-5 h-100">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.1303907312254!2d77.03922127528071!3d28.415322175783903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3e65af261e83%3A0xbf1b93e8015913c1!2sUniversal%20Trade%20Tower.!5e0!3m2!1sen!2sin!4v1745402439957!5m2!1sen!2sin"
+                                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    height="100%" width="100%">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about location section ends -->
+
+        <!-- amenities section starts here -->
+        <section id="amenities">
+            <div class="amenities-section">
+                <div class="container">
+                    <p class="text-center text-uppercase p-0 m-0 fw-semibold animate__animated animate__fadeInDown">
+                        Handpicked</p>
+                    <h1 class="text-uppercase fw-bold text-center animate__animated animate__fadeInUp">Amenities</h1>
+                    <p class="text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                        meticulously crafted to promote holistic well-being and cultivate
+                        meaningful community connections
+                    </p>
+
+                    <div class="row g-4 animate__animated animate__fadeInUp animate__delay-2s">
+                        <!-- Clubhouse -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-house-user"></i></div>
+                                <h2 class="amenity-label">Clubhouse</h2>
+                                <p>A comforting space designed for
+                                    heartfelt gatherings and quiet escapes</p>
+                            </div>
+                        </div>
+
+                        <!-- Dedicated Parking -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-parking"></i></div>
+                                <h2 class="amenity-label">Dedicated Parking</h2>
+                                <p>Secure basement and stilt parking spaces
+                                    thoughtfully reserved for your convenience</p>
+                            </div>
+                        </div>
+
+                        <!-- Security & Maintenance -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-shield-halved"></i></div>
+                                <h2 class="amenity-label">Security & Maintenance</h2>
+                                <p>With 24/7 vigilance and pristine upkeep,
+                                    we ensure your peace of mind</p>
+                            </div>
+                        </div>
+
+                        <!-- Jogging Track -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-person-running"></i></div>
+                                <h2 class="amenity-label">Jogging Track</h2>
+                                <p>Meandering pathways for jogging,
+                                    surrounded by lush landscapes</p>
+                            </div>
+                        </div>
+
+                        <!-- Health & Sports Zone -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-heart-pulse"></i></div>
+                                <h2 class="amenity-label">Health & Sports Zone</h2>
+                                <p>Wellness spaces designed to support
+                                    mindful exercise</p>
+                            </div>
+                        </div>
+
+                        <!-- Common Amenities -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="amenity-box">
+                                <div class="amenity-icon"><i class="fas fa-users"></i></div>
+                                <h2 class="amenity-label">Community Areas</h2>
+                                <p>Thoughtfully curated spaces designed to
+                                    inspire connection and joy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- amenities section ends here -->
+        <!-- about us section starts here  -->
+        <section id="about-us">
+            <div class="container-fluid bg-light py-5 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div>
+                                    <p class="text-uppercase p-0 m-0 about-text text-center">3-BHK residential
+                                        apartments in Sector 78, Gurugram</p>
+                                    <h1 class="fs-1 fw-bold text-uppercase about-us-section-h1 text-center">A Canvas of
+                                        Graceful Living</h1>
+                                    <p class="about-us-section-p text-center">Grace Resilviaa redefines residential
+                                        elegance with
+                                        low-rise buildings nestled at
+                                        the foothills of the Aravali Hills. Each four-story structure holds just two
+                                        expansive 3 BHK homes per floor, ensuring privacy and abundant natural light.
+                                        Crafted from premium materials and sustainable innovations like rainwater
+                                        harvesting, this enclave harmonizes resilience and artistry. Residents enjoy
+                                        curated amenities. Clubhouse, jogging trails, health and sports zone, dedicated
+                                        parking, and 24/7 security; set against lush landscapes. Seamless connectivity
+                                        to NH-8, Dwarka Expressway, and KMP Expressway places business hubs, schools,
+                                        and leisure destinations within easy reach. Here, every detail whispers
+                                        elegance, inviting you to celebrate life with cosmic grace, vividly embraced.
+                                    </p>
+                                    <div class="text-center">
+                                        <button
+                                            class="btn btn-success grace-btn learn-more-btn animate__animated animate__bounceIn animate__delay-4s"
+                                            onclick="openContactForm()">
+                                            Learn More <i class="fas fa-arrow-right arrow-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- types of apartments section starts here -->
+
+        <section id="typesofapartments">
+            <div class="container py-5">
+                <p class="text-center text-uppercase m-0 p-0">Premium 3 BHK apartments</p>
+                <h1 class="fw-bold text-uppercase text-center mb-5">Grace resilviaa</h1>
+                <div class="row g-0 justify-content-center gap-5">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card location-card">
+                            <img src="/images/FLr_pplan_1.jpg" alt="Hillview Residences" class="blurred-img">
+                            <div class="card-body location-card-body">
+                                <div class="location-number">01</div>
+                                <p class="location-title">Hillview Residences</p>
+                                <p class="location-desc">
+                                    At Grace Resilviaa, every square foot has a purpose. Browse our well-appointed floor
+                                    plans that bring together elegance, efficiency, and effortless living
+                                </p>
+                                <button
+                                    class="btn btn-success grace-btn learn-more-btn animate__animated animate__bounceIn animate__delay-4s text-uppercase"
+                                    onclick="openContactForm()">
+                                    Know more <i class="fas fa-arrow-right arrow-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card location-card">
+                            <img src="/images/FLr_pplan_2.jpg" alt="Gardenview Residences" class="blurred-img">
+                            <div class="card-body location-card-body">
+                                <div class="location-number">02</div>
+                                <p class="location-title">Gardenview Residences</p>
+                                <p class="location-desc">
+                                    Three bedroom homes framing lush landscaped gardens, with seamless indoor outdoor
+                                    flow.
+                                </p>
+                                <button
+                                    class="btn btn-success grace-btn learn-more-btn animate__animated animate__bounceIn animate__delay-4s text-uppercase"
+                                    onclick="openContactForm()">
+                                    Know more <i class="fas fa-arrow-right arrow-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- types of apartments section ends here -->
+
+        <!-- gallery section starts here  -->
+        <section id="gallery">
+            <div class="container">
+                <p class="text-center p-0 m-0 text-uppercase">Our</p>
+                <h1 class="text-uppercase text-center fw-bold">gallery</h1>
+                <p class="text-center">Step into the vision of Grace Resilviaa through our curated gallery—where design
+                    narratives unfold in every render.</p>
+                <div class="row my-4 g-4">
+                    <div class="col-md-4 col-sm-12 position-relative">
+                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/Gal_1.jpg')">
+                            <img src="/images/Gal_1.jpg" alt="">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="artistic-text">Artistic Impression</div>
+                    </div>
+                    <div class="col-md-8 col-sm-12 position-relative">
+                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/gal_3.jpg')">
+                            <img src="/images/gal_3.jpg" alt="">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="artistic-text">Artistic Impression</div>
+                    </div>
+                </div>
+                <div class="row my-4 g-4">
+                    <div class="col-md-8 col-sm-12 position-relative">
+                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/Gal_4.jpg')">
+                            <img src="/images/Gal_4.jpg" alt="">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="artistic-text">Artistic Impression</div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 position-relative">
+                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/Gal_2.png')">
+                            <img src="/images/Gal_2.png" alt="">
+                            <div class="overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </a>
+                        <div class="artistic-text">Artistic Impression</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gallery section endss here  -->
+
+        <!-- contact us section starts here  -->
+        <section id="contact-us">
+            <div class="container py-5">
+                <div class="row bg-white g-4 justify-content-center rounded-3 shadow-lg">
+                    <!-- Contact Information -->
+                    <div class="col-md-5 d-flex justify-content-center align-items-center
+                    position-relative">
+                        <img src="/images/Contact_us_Grace.jpg" alt="" width="100%">
+                        <div class="artistic-text">Artistic Impression</div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-md-6 pb-3">
+                        <div class="text-dark p-4 rounded shadow-sm h-100">
+                            <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Your email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Your phone number"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Your message"
+                                        required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit"
+                                        class="btn btn-success grace-btn fw-bold px-4 py-2">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact us section ends here  -->
+
+        <!-- footer starts here  -->
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <!-- Logo and Description Column -->
+                    <div class="col-md-3 mb-4">
+                        <div class="footer-logo">
+                            <img src="/images/new-logo.png" alt="Logo" />
+                        </div>
+                        <p class="">Rera: HRXXXXXXXXXXXXXX</p>
+                        <p>Grace is a visionary real estate developer renowned for crafting elegant, sustainable living
+                            spaces. With meticulous design, timely delivery, and unwavering commitment to quality, Grace
+                            transforms communities into enduring sanctuaries.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="col-md-3 mb-4 p-0 ps-md-5">
+                        <h5 class="text-white mb-3">Quick Links</h5>
+                        <div class="bg-dark p-3 rounded shadow-sm">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="text-white text-decoration-none d-block py-1">Home</a></li>
+                                <li><a href="#about-us" class="text-white text-decoration-none d-block py-1">About
+                                        Us</a></li>
+                                <li><a class="text-white text-decoration-none d-block py-1"
+                                        href="#location">Location</a></li>
+                                <li><a class="text-white text-decoration-none d-block py-1"
+                                        href="#amenities">Amenities</a></li>
+                                <li><a class="text-white text-decoration-none d-block py-1"
+                                        href="#typesofapartments">Types of
+                                        apartments</a></li>
+                                <li><a class="text-white text-decoration-none d-block py-1" href="#gallery">Gallery</a>
+                                </li>
+                                <li><a class="text-white text-decoration-none d-block py-1" href="#contact-us">Contact
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Links Column -->
+                    <div class="col-12 col-md-3 mb-4">
+                        <h5 class="text-white mb-3">Our Gallery</h5>
+                        <div class="container p-0 m-0 d-flex justify-content-center">
+                            <div class="row g-2 p-0 m-0  footer-images"> <!-- g-2 adds spacing between images -->
+                                <div class="col-6 col-md-3 p-0 m-0 position-relative">
+                                    <img src="/images/Gal_1.jpg" class="img-fluid rounded-3" alt="gallery-1">
+                                    <div class="artistic-text-footer">Artistic Impression</div>
+                                </div>
+                                <div class="col-6 col-md-3 p-0 m-0 position-relative">
+                                    <img src="/images/Gal_2.png" class="img-fluid rounded-3" alt="gallery-2">
+                                    <div class="artistic-text-footer">Artistic Impression</div>
+                                </div>
+                                <div class="col-6 col-md-3 p-0 m-0 position-relative">
+                                    <img src="/images/Gal_3.jpg" class="img-fluid rounded-3" alt="gallery-3">
+                                    <div class="artistic-text-footer">Artistic Impression</div>
+                                </div>
+                                <div class="col-6 col-md-3 p-0 m-0 position-relative">
+                                    <img src="/images/Gal_4.jpg" class="img-fluid rounded-3" alt="gallery-4">
+                                    <div class="artistic-text-footer">Artistic Impression</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Social Media Icons Column -->
+                    <div class="col-md-3 mb-4">
+                        <h5 class="text-white mb-3">Follow Us</h5>
+                        <div class="mb-3">
+                            Registered
+                            office address: B-61, Wazirpur Industrial Area , North Delhi, India,
+                            110052
+                        </div>
+                        <div class="mb-3">
+                            Corporate office: 6th Floor, Universal Trade Tower,
+                            Block S, Sector 49, Gurugram.
+                        </div>
+                        <div class="mb-3">
+                            <p>Email: info@graceresilviaa.com</p>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                            <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scroll Circle with FontAwesome Home Icon -->
+    <div id="scroll-circle" onclick="scrollToTop()">
+        <svg width="60" height="60">
+            <circle cx="30" cy="30" r="26" stroke="#ddd" stroke-width="4" fill="none" />
+            <circle id="scroll-indicator" cx="30" cy="30" r="26" stroke="#035434" stroke-width="4" fill="none"
+                stroke-linecap="round" transform="rotate(-90 30 30)" />
+        </svg>
+        <span class="scroll-icon">
+            <i class="fas fa-arrow-up"></i>
+        </span>
+    </div>
+    <!-- footer ends here  -->
+    <!-- Modal for full image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Preview">
+        </div>
+    </div>
+
+    <!-- Contact Form Panel -->
+    <div class="contact-form-overlay" id="contactForm">
+        <div class="row">
+            <div class="col-6 d-none d-md-flex justify-content-center align-items-center">
+                <div>
+                    <img src="/images/Apt_1.jpg" alt="apt_image" width="100%">
+                    <h2 class="text-center my-3">3BHK APARTMENTS</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="mb-0">Get in Touch</h2>
+                    <button class="btn-close" onclick="closeContactForm()"></button>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <!-- <label for="name" class="form-label">Full Name</label> -->
+                        <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="email" class="form-label">Email address</label> -->
+                        <input type="email" class="form-control" id="email" placeholder="Enter email address">
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="subject" class="form-label">Phone number</label> -->
+                        <input type="text" class="form-control" id="subject" placeholder="Enter phone number">
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="message" class="form-label">Message</label> -->
+                        <textarea class="form-control" id="message" rows="4"
+                            placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success grace-btn w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-bg" id="overlay"></div>
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
