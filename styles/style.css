@@ -627,9 +627,23 @@ footer .row {
     filter: blur(5px);
 }
 
+
 .artistic-text {
     position: absolute;
     bottom: 10px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+.artistic-text-contact-us {
+    position: absolute;
+    bottom: 20px;
     right: 20px;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
