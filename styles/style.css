@@ -18,6 +18,7 @@
     --theme-dark: #035434;
     --button-color: #fff;
     --bg-gradient: radial-gradient(circle, #103023, #205846);
+    --heading-color: #a27f42;
 }
 
 html {
@@ -35,7 +36,7 @@ h4,
 h5,
 h6 {
     font-family: 'frybt', 'sens-serif';
-    color: #a27f42;
+    color: var(--heading-color);
 }
 
 p {
@@ -115,6 +116,7 @@ p {
     font-family: "frybt", sans-serif;
     word-break: break-word;
     margin-bottom: 1rem;
+    color: var(--heading-color);
 }
 
 .learn-more-btn {
