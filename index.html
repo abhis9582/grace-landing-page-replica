@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- animation cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
 </head>
 
-<body>
+<body data-scroll-container>
     <div class="container-fluid p-0 m-0">
 
         <!-- header starts here -->
@@ -69,7 +69,7 @@
         <!-- header ends here -->
 
         <!-- hero section starts here -->
-        <section class="hero-section position-relative">
+        <section class="hero-section position-relative" data-scroll-section>
             <div class="container-fluid m-0 p-0">
                 <div class="row g-0">
                     <div
@@ -186,7 +186,7 @@
         <!-- marqube container ends here -->
 
         <!-- about location section starts -->
-        <section id="location">
+        <section id="location" data-scroll-section>
             <div class="container-fluid bg-light py-5">
                 <div class="text-center mb-5">
                     <p class="text-uppercase fw-semibold animate__animated animate__fadeInDown animate__delay-1s m-0">
@@ -298,7 +298,7 @@
         <!-- about location section ends -->
 
         <!-- amenities section starts here -->
-        <section id="amenities">
+        <section id="amenities" data-scroll-section>
             <div class="amenities-section">
                 <div class="container">
                     <p class="text-center text-uppercase p-0 m-0 fw-semibold animate__animated animate__fadeInDown">
@@ -415,7 +415,7 @@
         </section> -->
         <!-- types of apartments section starts here -->
 
-        <section id="typesofapartments">
+        <section id="typesofapartments" data-scroll-section>
             <div class="container py-5">
                 <p class="text-uppercase p-0 m-0 about-text text-center">3-BHK residential
                     apartments in Sector 78, Gurugram</p>
@@ -511,7 +511,7 @@
         <!-- types of apartments section ends here -->
 
         <!-- gallery section starts here  -->
-        <section id="gallery">
+        <section id="gallery" data-scroll-section>
             <div class="container">
                 <p class="text-center p-0 m-0 text-uppercase">Our</p>
                 <h1 class="text-uppercase text-center fw-bold">gallery</h1>
@@ -581,7 +581,8 @@
                 </div>
                 <div class="row my-2 g-4">
                     <div class="col-md-8 col-sm-12 position-relative">
-                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/Grace_Gallery_6.jpg')">
+                        <a href="javascript:void(0);" class="image-wrapper"
+                            onclick="openModal('/images/Grace_Gallery_6.jpg')">
                             <img src="/images/Grace_Gallery_6.jpg" alt="">
                             <div class="overlay">
                                 <i class="fas fa-search-plus"></i>
@@ -590,7 +591,8 @@
                         <div class="artistic-text">Artistic Impression</div>
                     </div>
                     <div class="col-md-4 col-sm-12 position-relative">
-                        <a href="javascript:void(0);" class="image-wrapper" onclick="openModal('/images/Grace_Gallery_4.jpg')">
+                        <a href="javascript:void(0);" class="image-wrapper"
+                            onclick="openModal('/images/Grace_Gallery_4.jpg')">
                             <img src="/images/Grace_Gallery_4.jpg" alt="">
                             <div class="overlay">
                                 <i class="fas fa-search-plus"></i>
@@ -604,7 +606,7 @@
         <!-- gallery section endss here  -->
 
         <!-- contact us section starts here  -->
-        <section id="contact-us">
+        <section id="contact-us" data-scroll-section>
             <div class="container py-5">
                 <div class="row bg-white g-4 justify-content-center rounded-3 shadow-lg">
                     <!-- Contact Information -->
@@ -648,7 +650,7 @@
         <!-- contact us section ends here  -->
 
         <!-- footer starts here  -->
-        <footer class="bg-dark text-white py-5">
+        <footer class="bg-dark text-white py-5" data-scroll-section>
             <div class="container">
                 <div class="row text-center text-md-start">
                     <!-- Logo and Description Column -->
@@ -796,11 +798,12 @@
         </div>
     </div>
     <div class="overlay-bg" id="overlay"></div>
-    <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="/script.js"></script>
     <script>
         new WOW().init();
     </script>

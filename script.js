@@ -1,26 +1,16 @@
-//handling fixed navbar on scrolling 
-function fixedHeaderOnScroll() {
+function fixedHeaderOnScroll(scrollInstance) {
     const header = document.querySelector('.header');
     const heroSection = document.querySelector('.hero-section');
-    let lastScrollY = window.scrollY;
-    let isUserScrolled = false;
+    let lastScrollY = 0;
 
-    window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-
-        if (!isUserScrolled && currentScrollY !== lastScrollY) {
-            isUserScrolled = true;
-        }
-
-        if (!isUserScrolled) return;
+    scrollInstance.on('scroll', (args) => {
+        const currentScrollY = args.scroll.y;
 
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            // Scrolling down
             header.classList.add('fixed-header', 'header-hide');
             header.classList.remove('header-show');
             heroSection.classList.add('with-margin');
         } else if (currentScrollY < lastScrollY) {
-            // Scrolling up
             header.classList.add('fixed-header', 'header-show');
             header.classList.remove('header-hide');
             heroSection.classList.add('with-margin');
@@ -30,7 +20,15 @@ function fixedHeaderOnScroll() {
     });
 }
 
-window.addEventListener('DOMContentLoaded', fixedHeaderOnScroll);
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    lerp: 0.03,
+});
+
+// Call your header function with Locomotive Scroll instance
+fixedHeaderOnScroll(scroll);
+
 
 
 
