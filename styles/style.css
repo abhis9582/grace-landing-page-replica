@@ -55,7 +55,7 @@ p {
 /* header styling starts here  */
 .header {
     background: var(--bg-gradient);
-    z-index: 999;
+    z-index: 1050;
 }
 
 .navbar-brand {
