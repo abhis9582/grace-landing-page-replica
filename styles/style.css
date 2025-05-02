@@ -19,6 +19,7 @@
     --button-color: #fff;
     --bg-gradient: radial-gradient(circle, #103023, #205846);
     --heading-color: #a27f42;
+    --btn-bg-on-hover: linear-gradient(to right, #cba563, #a27f42);
 }
 
 html {
@@ -45,6 +46,10 @@ p {
 
 .grace-btn {
     background: var(--theme-dark) !important;
+}
+
+.grace-btn:hover{
+    background: var(--btn-bg-on-hover) !important;
 }
 
 /* header styling starts here  */
