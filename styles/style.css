@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'constan';
+    src: url('/fonts/constantia/constan.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --theme-dark: #035434;
     --button-color: #fff;
@@ -38,6 +45,10 @@ h5,
 h6 {
     font-family: 'frybt', 'sens-serif';
     color: var(--heading-color);
+}
+
+.font-constan {
+    font-family: 'constan' !important;
 }
 
 p {
