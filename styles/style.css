@@ -118,7 +118,7 @@ p {
 }
 
 .banner-text {
-    font-size: clamp(3.5rem, 5vw, 5.25rem);
+    font-size: clamp(3.0rem, 5vw, 4.25rem);
     /* responsive font size */
     line-height: 1.2;
     font-family: "frybt", sans-serif;
@@ -644,7 +644,7 @@ footer .row {
 .artistic-text {
     position: absolute;
     bottom: 10px;
-    right: 20px;
+    left: 20px;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 4px 10px;
@@ -688,4 +688,10 @@ footer .row {
 [data-scroll-container] {
     overflow: hidden;
     padding-bottom: 100px;
+}
+
+.text-area {
+    border-radius: 2rem;
+    box-shadow: 0 0 0 2px white,
+                0 0 0 2px white;
 }
