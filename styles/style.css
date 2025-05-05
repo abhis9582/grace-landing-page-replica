@@ -48,14 +48,14 @@ p {
     background: var(--theme-dark) !important;
 }
 
-.grace-btn:hover{
+.grace-btn:hover {
     background: var(--btn-bg-on-hover) !important;
 }
 
 /* header styling starts here  */
 .header {
     background: var(--bg-gradient);
-    z-index: 1050;
+    z-index: 9999;
 }
 
 .navbar-brand {
@@ -456,9 +456,11 @@ footer .row {
         max-width: 50%;
         object-fit: contain;
     }
+
     .navbar-brand {
         height: 60px;
     }
+
     .hero-section.with-margin {
         margin-top: 78px;
     }
@@ -652,6 +654,7 @@ footer .row {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     pointer-events: none;
 }
+
 .artistic-text-contact-us {
     position: absolute;
     bottom: 20px;
@@ -680,4 +683,9 @@ footer .row {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     pointer-events: none;
     left: -5px;
+}
+
+[data-scroll-container] {
+    overflow: hidden;
+    padding-bottom: 100px;
 }

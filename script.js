@@ -1,16 +1,26 @@
-function fixedHeaderOnScroll(scrollInstance) {
+//handling fixed navbar on scrolling 
+function fixedHeaderOnScroll() {
     const header = document.querySelector('.header');
     const heroSection = document.querySelector('.hero-section');
-    let lastScrollY = 0;
+    let lastScrollY = window.scrollY;
+    let isUserScrolled = false;
 
-    scrollInstance.on('scroll', (args) => {
-        const currentScrollY = args.scroll.y;
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (!isUserScrolled && currentScrollY !== lastScrollY) {
+            isUserScrolled = true;
+        }
+
+        if (!isUserScrolled) return;
 
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down
             header.classList.add('fixed-header', 'header-hide');
             header.classList.remove('header-show');
             heroSection.classList.add('with-margin');
         } else if (currentScrollY < lastScrollY) {
+            // Scrolling up
             header.classList.add('fixed-header', 'header-show');
             header.classList.remove('header-hide');
             heroSection.classList.add('with-margin');
@@ -20,15 +30,7 @@ function fixedHeaderOnScroll(scrollInstance) {
     });
 }
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    lerp: 0.03,
-});
-
-// Call your header function with Locomotive Scroll instance
-fixedHeaderOnScroll(scroll);
-
+window.addEventListener('DOMContentLoaded', fixedHeaderOnScroll);
 
 
 
@@ -59,17 +61,17 @@ function scrollToTop() {
 }
 
 // Update the progress of the circle as user scrolls
-window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = scrollTop / docHeight;
-    const circle = document.getElementById('scroll-indicator');
-    const radius = 26;
-    const circumference = 2 * Math.PI * radius;
+// window.addEventListener('scroll', () => {
+//     const scrollTop = window.scrollY;
+//     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+//     const scrollPercent = scrollTop / docHeight;
+//     const circle = document.getElementById('scroll-indicator');
+//     const radius = 26;
+//     const circumference = 2 * Math.PI * radius;
 
-    const offset = circumference * (1 - scrollPercent);
-    circle.style.strokeDashoffset = offset;
-});
+//     const offset = circumference * (1 - scrollPercent);
+//     circle.style.strokeDashoffset = offset;
+// });
 
 // handling gallery image popup 
 function openModal(imageSrc) {
@@ -105,3 +107,24 @@ document.getElementById('overlay').addEventListener('click', function () {
 //         openContactForm();
 //     }, 3000);
 // });
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+});
+window.addEventListener('load', () => {
+    scroll.update(); // Ensures it recalculates scroll height
+});
+
+// Intercept nav links and use locomotive scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            scroll.scrollTo(target, {
+                offset: -100
+            });
+        }
+    });
+});
