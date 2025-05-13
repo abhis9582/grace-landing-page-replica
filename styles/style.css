@@ -47,7 +47,7 @@ h6 {
     color: var(--heading-color);
 }
 
-.weight-100{
+.weight-100 {
     font-weight: 100 !important;
 }
 
@@ -60,11 +60,12 @@ p {
 }
 
 .grace-btn {
-    background: var(--theme-dark) !important;
+    background: var(--btn-bg-on-hover) !important;
 }
 
 .grace-btn:hover {
-    background: var(--btn-bg-on-hover) !important;
+    background: var(--theme-dark) !important;
+    color: #fff;
 }
 
 /* header styling starts here  */
@@ -708,5 +709,5 @@ footer .row {
 .text-area {
     border-radius: 2rem;
     box-shadow: 0 0 0 2px white,
-                0 0 0 2px white;
+        0 0 0 2px white;
 }
