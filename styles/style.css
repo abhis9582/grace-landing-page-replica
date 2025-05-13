@@ -74,6 +74,9 @@ p {
     z-index: 9999;
 }
 
+footer {
+    background: var(--bg-gradient);
+}
 .navbar-brand {
     height: 80px;
     width: auto;
